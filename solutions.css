@@ -1,6 +1,185 @@
+/* quadrato 1 */
 .ex-1-square{
     transition: 2s;
 }
-.ex-1-square:hover {
+.ex-1-square:hover{
     background: red;
+}
+/* quadrato 2 */
+.ex-2-square {
+    transition: 2s;
+}
+.ex-2-square:active {
+    width: 100%;
+}
+/* quadrato 3 */
+.ex-3-square{
+    transition: 1s;
+}
+.ex-3-square:hover{
+    border-radius: 100%;
+}
+/* quadrato 4 */
+.ex-4-square{
+    transition: 1s;
+}
+.ex-4-square:hover{
+    opacity: 0;
+}
+/* quadrato 5 */
+.ex-5-square{
+    transition: 1s;
+}
+.ex-5-square:hover{
+    transform: scale(2);
+}
+.ex-5-square:active{
+    transform: scale(.2);
+}
+/* quadrato 6 */
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+/* quadrato 7 */
+.ex-7-img{
+    transition: 4s;
+}
+.ex-7-img:hover{
+    filter: grayscale(.6) saturate(50%);
+}
+/* quadrato 8 */
+.ex-8-img{
+    transition: 2s;
+}
+.ex-8-img:hover{
+    filter: grayscale(.6) saturate(50%);
+    border-radius: 20px;
+}
+/* quadrato 9 */
+.ex-9-img{
+    transition: 2s;
+}
+.ex-9-img:hover{
+    filter: grayscale(.6) saturate(50%);
+    border-radius: 20px;
+    transform: scale(1.8);
+}
+/* icon 10 */
+.ex-10-icon{
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+/* icon 11 */
+.ex-11-icon:hover{
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+/* icon 12 */
+/* sopra */
+.ex-12-button:hover .ex-12-top-white{
+    animation: move-top-white 3s linear;
+}
+@keyframes move-top-white{
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+/* sotto */
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: move-bottom-white 3s linear;
+}
+@keyframes move-bottom-white{
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}
+/* icon 13 */
+/* sopra */
+.ex-13-button:hover .ex-13-top-white{
+    animation: move-top-white-completely 3s linear;
+}
+@keyframes move-top-white-completely{
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+/* sotto */
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: move-bottom-white-completely 3s linear;
+}
+@keyframes move-bottom-white-completely{
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
 }
